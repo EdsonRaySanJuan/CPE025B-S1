@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harbor Light Community Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .center-and-space-content {
+            text-align: center; /* Centers inline or inline-block content within the div */
+            padding: 10px; /* Adds padding around the content inside the div */
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .top-nav{
+        background-color: #000000;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: flex-end;
+        }
+
+        .top-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 20px;
+        padding: 7px;
+        }
+
+        .top-nav a:hover{
+        color: rgb(51, 157, 175);
+        }
+
+        .top-nav a.active { 
+            text-decoration: underline; 
+            color: rgb(51, 157, 175);
+        }
+
+        .container{
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+        text-align: center;
+        color: #4b2e0f;
+        margin-bottom: 10px;
+        }
+
+        h2 {
+        font-size: 1.4em;
+        margin-top: 10px;
+        }
+
+        p {
+        margin-bottom: 20px;
+        text-align: justify;
+        }
+
+        .section {
+        background-color: #f9f5f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+        line-height: 1.6;
+        }
+
+        .center-image {
+        text-align: center;
+        }
+
+        .banner{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center-and-space-content">
+            <img src="https://edube.org/uploads/media/default/0001/04/logo.jpg" alt="Harbor Light Community Center Logo">
+            <p><center>Welcome to Harbor Light Community Center</center></p>
+        </div>
+    </header>
+    
+    <nav role=" navigation" class="top-nav">
+            <a href="proce.html" >About Us</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="banner" >
+        <img src="https://edube.org/uploads/media/default/0001/04/decorative-banner.jpg" alt="" aria-hidden="true">
+    </div>
+
+    <main>
+        <center><video controls height="600" width="700">
+            <source src="video.mp4" type="video/mp4" style="margin-bottom: 10px;">
+            Your browser does not support the video tag.
+        </video></center>
+        <br><br>
+        <h2 style="font-size: 30px;">Our Services</h2>
+        <section id="services" class="container section">
+            <h2>Core treatment services</h2>
+            <ul>
+                <li>Withdrawal management / medical detox with 24‑hour nursing and physician oversight for people in acute distress from alcohol or drug use.</li>
+                <li>Short‑term residential treatment (about 28 days) with structured daily programming, education on chemical dependency, relapse‑prevention skills, and on‑site drug testing.</li>
+                <li>Longer‑term residential services (3.1 level of care) that combine counseling, life‑skills training, and a structured living environment to support early recovery.</li>
+            </ul>
+        </section>
+
+        <section id="services" class="container section">
+            <h2>Outpatient and continuing care</h2>
+            <ul>
+                <li>Intensive outpatient treatment (IOP) for alcohol, drug, and gambling addiction, usually 8–16 weeks of cognitive‑based group sessions several times per week.</li>
+                <li>Regular outpatient counseling and ongoing aftercare to help clients maintain sobriety and transition back into work, housing, and community life.</li>
+            </ul>
+        </section>
+
+        <section id="services" class="container section">
+            <h2>Supportive and wraparound services</h2>
+            <ul>
+                <li>Case management to link clients with housing, employment, healthcare, and other community resources.</li>
+                <li>Family education and therapy, on‑site 12‑step meetings, and spiritual support consistent with The Salvation Army’s Christian mission.</li>
+                <li>Health education, HIV testing and education, recreational activities, and access to an on‑site computer lab to build life and job skills.</li>
+            </ul>
+        </section>
+
+        <section id="services" class="container section">
+            <h2>Who they serve</h2>
+            <ul>
+                <li>Adult men and women, including people with co‑occurring mental health issues or a history of trauma, who are motivated for treatment.</li>
+                <li>Primarily residents of Central Indiana, though admissions can come from anywhere in the state.</li>
+            </ul>
+        </section>
+
+    </main>
