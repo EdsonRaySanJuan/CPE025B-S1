@@ -16,7 +16,7 @@ h2, h3{
     text-align: center;
 }
 
-p{
+p, li, b{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     text-align: justify;
@@ -58,7 +58,7 @@ top-nav a:hover{
     width: 40%;
     margin: 40px auto;
     padding: 20px;
-}
+}   
 
 .section{
     padding: 5px;
