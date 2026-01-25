@@ -78,25 +78,3 @@ p {
 #header h1 {
     color: orange !important; /* Overridden by !important */
 }
-
-.container{
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 0 20px;
-    flex: 1;
-}
-
-.section {
-    background-color: #f9f5f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.sections-row {
-  display: flex;
-  justify-content: center;  
-  gap: 20px;                 
-}
