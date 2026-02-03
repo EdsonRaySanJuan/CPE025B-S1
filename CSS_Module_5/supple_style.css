@@ -1,0 +1,173 @@
+/* supple_style.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    background-image: url("https://i.pinimg.com/736x/e7/16/20/e71620914837338f8941767465dc194f.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+/* transparent to see bg img */
+body {
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    background: transparent;
+}
+
+/* top bar  */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(194, 145, 0, 0.95);
+    color: #fff;
+    padding: 12px 24px;
+    backdrop-filter: blur(4px);
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #c29100;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* cover sec */
+.hero-cover {
+    position: relative;
+    height: 70vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.25));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.hero-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #ff5c7b;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff7f94;
+}
+
+/* episode grids */
+.episodes-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    background-color: rgba(24, 24, 24, 0.9);
+}
+
+.episode-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+/* image base */
+.thumb {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* hover effect */
+.episode-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    background-color: #2b2b2b;
+}
+
+.episode-card:hover .thumb {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+/* Episode thumbnails */
+.ep1  { background-image: url("https://i.mydramalist.com/pdng0B_3m.jpg"); }
+.ep2  { background-image: url("https://i.mydramalist.com/x4EWgy_3m.jpg"); }
+.ep3  { background-image: url("https://i.mydramalist.com/vXJZ52_3m.jpg"); }
+.ep4  { background-image: url("https://i.mydramalist.com/Bdq4Zb_3m.jpg"); }
+.ep5  { background-image: url("https://i.mydramalist.com/wJmYXp_3m.jpg"); }
+.ep6  { background-image: url("https://i.mydramalist.com/BdqPW1_3m.jpg"); }
+.ep7  { background-image: url("https://i.mydramalist.com/2w4RpP_3m.jpg"); }
+.ep8  { background-image: url("https://i.mydramalist.com/2w48Nd_3m.jpg"); }
+.ep9  { background-image: url("https://i.mydramalist.com/WPQ1wO_3m.jpg"); }
+.ep10 { background-image: url("https://i.mydramalist.com/vXOWRX_3m.jpg"); }
+.ep11 { background-image: url("https://i.mydramalist.com/rNq58j_3m.jpg"); }
+.ep12 { background-image: url("https://i.mydramalist.com/Xdezxd_3m.jpg"); }
+.ep13 { background-image: url("https://i.mydramalist.com/XdemqX_3m.jpg"); }
+.ep14 { background-image: url("https://i.mydramalist.com/pdW1Y8_3m.jpg"); }
+.ep15 { background-image: url("https://i.mydramalist.com/QJj8V6_3m.jpg"); }
+.ep16 { background-image: url("https://i.mydramalist.com/E58B2W_3m.jpg"); }
+
+.episode-card h3 {
+    margin: 12px 14px 6px;
+    font-size: 0.98rem;
+}
+
+.episode-card p {
+    margin: 0 14px 14px;
+    color: #e0e0e0;
+    font-size: 0.88rem;
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .hero-overlay {
+        padding: 5px;
+    }
+}
