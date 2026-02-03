@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "CPE025B-S1"
+    "liveServer.settings.multiRootWorkspaceName": "CPE025B-S1",
+    "python-envs.pythonProjects": [
+        {
+            "path": "Prelim_Skills_Exam",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
