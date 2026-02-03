@@ -1,0 +1,151 @@
+/* supp_styles.css */
+/* Base */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Fixed header */
+/* Header styles */
+header {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    background: url('https://wallpapercave.com/wp/E5KzsrC.jpg')
+                no-repeat center center;
+    background-size: cover;
+
+    padding: 20px;
+    text-align: left;     
+    color: white;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 2px 0 0;
+    font-size: 13px;
+}
+
+/* Layout: sidebar + content */
+main {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 70px;         
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #222;
+    color: white;
+    padding: 20px 15px;
+    position: sticky;
+    top: 70px;                
+    height: calc(100vh - 70px);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+/* Content area */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.content section {
+    scroll-margin-top: 90px;   
+    margin-bottom: 60px;
+}
+
+/* Product grid */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 30%;      /* 3 items per row, fixed */
+    min-width: 260px;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+.product-info {
+    padding: 12px 10px 16px;
+    font-size: 14px;
+}
+
+.product-tag {
+    color: #e04412;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.product-name {
+    margin: 0 0 2px;
+    font-size: 15px;
+}
+
+.product-subtitle {
+    margin: 0 0 8px;
+    color: #555;
+    font-size: 13px;
+}
+
+.product-price {
+    margin: 0;
+    font-weight: 600;
+}
