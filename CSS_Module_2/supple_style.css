@@ -4,7 +4,7 @@
     background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     display: flex;
-    justify-content: center;       /* center links instead of right side */
+    justify-content: center;      
 }
 
 .top-nav a{
@@ -37,7 +37,6 @@ body{
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    /* simple background upgrade: light gradient instead of flat gray */
     background-image: linear-gradient(to bottom right, #e6eefc, #f7ecff);
     color: #333333;
 }
@@ -45,8 +44,8 @@ body{
 
 /* Simple container to center content */
 .container{
-    max-width: 1000px;          /* limit line length so text is easier to read */
-    margin: 20px auto;          /* center the card area */
+    max-width: 1000px;         
+    margin: 20px auto;       
     padding: 0 20px;
 }
 /* end */
@@ -110,14 +109,13 @@ button,
     padding: 8px 18px;
     margin-right: 10px;
     margin-top: 10px;
-    border-radius: 20px;         /* more rounded buttons */
+    border-radius: 20px;         
     font-size: 14px;
     cursor: pointer;
 
     text-decoration: none;
     display: inline-block;
 
-    /* small shadow so they stand out */
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -239,7 +237,7 @@ button:hover,
     border: 1px solid #dde3ee;
     flex: 1 1 250px;
 
-    display: block;          /* clickable card (it's an <a>) */
+    display: block;      
     text-decoration: none;
     color: #333333;
     overflow: hidden;
@@ -253,7 +251,7 @@ button:hover,
 
 /* image area */
 .project-image{
-    height: 160px;           /* adjust height if needed */
+    height: 160px;           
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
