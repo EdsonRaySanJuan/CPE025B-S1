@@ -22,45 +22,38 @@ header {
 }
 
 /* Column styles */
-.flex-columns {
-    display: flex;
-    gap: 2%;
-}
-
 .column {
-    flex: 1;
+    float: left;
+    width: 30%;
+    margin: 1.66%;
     background-color: #e2e2e2;
     padding: 10px;
 }
 
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
-    .flex-columns {
-        flex-direction: column;
-    }
-
     .column {
         width: 100%;
+        float: none;
         margin: 0 0 20px 0;
     }
 }
 
 /* Grid styles */
 .row {
-    display: flex;
-    gap: 2%;
+    overflow: hidden;
 }
 
 /* Post styles */
-.post {
-    display: flex;
-    align-items: center;
-}
-
 .post img {
-    width: 120px;        /* smaller fixed size */
-    height: 120px;
-    object-fit: contain; /* keep aspect ratio inside this frame */
+    float: left;
+    width: 50%;
     margin-right: 10px;
-    border-radius: 20px; /* optional rounding like your mockup */
 }
