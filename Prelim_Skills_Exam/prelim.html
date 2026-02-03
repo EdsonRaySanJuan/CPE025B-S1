@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body style="background-color: #ffe8c4;">
+        <style>
+            h1, p, label, option, button{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .container{
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section {
+        background-color: #C4DBFF;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+        line-height: 1.6;
+        }
+        .container-select{
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 10 20px;
+        }
+        .select, .label{
+            text-align: center;
+        }
+        
+        </style>
+        <center>
+        <h1>Sleep Deprive Survey</h1>
+        <p>This is very common to students especially when its final term</p>
+        </center>
+        <div class="container section">
+        <form id="survey-from">
+            <label for="name">User Name</label>
+            <input id="name" type="text" name="name" required>
+            <br><br>
+            <label for="email">Email </label>
+            <input id="email" type="email" name="email" required>
+            <br><br>
+            
+            <label for="age">Age</label>
+            <input id="age" type="number" name="age" required>
+            <br><br>
+            <label for="number">Number of days your Sleep Deprive</label>
+            <input id="number" type="number" name="number" min="0" max="30" required>
+            <br>
+        </div>
+    </head>
+    <div class="container-select section select">
+    <label id="dropdown" for="dropdown">What are your <mark>METHODS</mark> to make your self fall a sleep</label>
+    <select id="dropdown" name="dropdown" required>
+        <option value="">Select your methods of falling asleep</option>
+        <option value="breathing">Breathing in and out for 30 seconds</option>
+        <option value="reading">Reading a book before going to sleep</option>
+        <option value="exercise">Do you drink water or milk before you sleep</option>
+    </select>
+</div>
+
+<div class="container section label">
+    <h3>How long does it take for you to Fall Asleep</h3>
+    <label><input type="radio" name="sleep" value="good">Less than 5 mins</label>
+    <br>
+    <label><input type="radio" name="sleep" value="slightly good">Less than 10 mins</label>
+    <br>
+    <label><input type="radio" name="sleep" value="neutral">Less than 12.5 mins</label>
+    <br>
+    <label><input type="radio" name="sleep" value="slightly not good">Less than 15 mins</label>
+    <br>
+    <label><input type="radio" name="sleep" value="not good">Less than 30 mins</label>
+</div>
+
+<div class="container section label">
+    <h3>Do you want to arrange you sleeping hours? Here are my recommendations</h3>
+    <label><input type="checkbox" name="recommendations" value="its good">Dont use cellphone in the dark</label>
+    <br>
+    <label><input type="checkbox" name="recommendations" value="good">Dont use cellphone past 8pm</label>
+    <br>
+    <label><input type="checkbox" name="recommendations" value="recommended">Dont dont drink coffee at night</label>
+    <br>
+    <label><input type="checkbox" name="recommendations" value="pede na">Dont be too attach to your gadget</label>
+    <br><br><br>
+</div>
+
+<div class="container section label">
+    <label for="comments">Comment here your thoughts here about this Survey</label>
+    <br><br>
+    <textarea id="comments" name="comments"></textarea>
+    <br>
+
+    <button id="submit" type="submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
