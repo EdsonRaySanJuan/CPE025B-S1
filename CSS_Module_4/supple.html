@@ -3,58 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tech Hub</title>
+    <title>Tech Insight Journal</title>
     <link rel="stylesheet" href="supple_styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Tech Hub</h1>
-        <p>Your daily source of technology insights.</p>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1>Tech Insight Journal</h1>
+            <p>Curated analysis and commentary on emerging technologies.</p>
+        </div>
     </header>
 
-    <!-- Feature sections -->
-    <div class="container">
-        <div class="column">
-            <h2>Latest News</h2>
-            <p>Catch breaking stories from the world of technology.</p>
-        </div>
-        <div class="column">
-            <h2>Reviews</h2>
-            <p>In‑depth reviews of gadgets, phones, and laptops.</p>
-        </div>
-        <div class="column">
-            <h2>Tutorials</h2>
-            <p>Step‑by‑step guides to help you learn new tools.</p>
-        </div>
-        <div class="clearfix"></div>
-    </div>
+    <main>
+        <!-- Feature sections -->
+        <section class="container">
+            <div class="columns">
+                <article class="card">
+                    <h2>Industry Briefings</h2>
+                    <p>Concise updates on major developments shaping the technology sector.</p>
+                </article>
 
-    <!-- Grid section -->
-    <div class="container">
-        <div class="row">
-            <div class="column">Featured Article</div>
-            <div class="column">Editor’s Picks</div>
-            <div class="column">Community Posts</div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+                <article class="card">
+                    <h2>Product Reviews</h2>
+                    <p>Objective evaluations of contemporary hardware, software, and services.</p>
+                </article>
 
-    <!-- Post with text wrapping around image -->
-    <div class="container">
-        <div class="post">
-            <img src="image.jpg" alt="Tech illustration">
-            <p>
-                Welcome to My Tech Hub, where we explore the latest innovations in hardware,
-                software, and everything in between. In this article, we look at how modern
-                user interfaces combine clean layouts, responsive grids, and subtle visual
-                effects to create engaging reading experiences for users on any device.
-            </p>
-            <p>
-                As you resize this page, notice how the content adapts, columns stack,
-                and the image stays aligned with the article text. This layout gives you
-                a simple starting point for building more advanced tech blog designs.
-            </p>
-        </div>
-    </div>
+                <article class="card">
+                    <h2>Practical Guides</h2>
+                    <p>Step‑by‑step guidance to help you apply new tools in real scenarios.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Grid section -->
+        <section class="container">
+            <div class="columns">
+                <article class="card subtle">
+                    <h3>Editor’s Highlight</h3>
+                    <p>An in‑depth perspective on a key trend influencing the digital landscape.</p>
+                </article>
+
+                <article class="card subtle">
+                    <h3>Research Notes</h3>
+                    <p>Summaries of significant reports, white papers, and academic studies.</p>
+                </article>
+
+                <article class="card subtle">
+                    <h3>Community Voices</h3>
+                    <p>Considered viewpoints from professionals working across the industry.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Article with wrapped image -->
+        <section class="container">
+            <article class="post">
+                <img src="image.jpg" alt="Abstract technology illustration">
+                <h2>Designing a Calm Reading Experience</h2>
+                <p>
+                    This publication is designed to provide a clear and focused reading environment,
+                    balancing white space, measured line length, and restrained color accents.
+                </p>
+                <p>
+                    As you navigate the page, the layout adapts gracefully to different screens,
+                    allowing the illustration to anchor the text while maintaining a comfortable rhythm
+                    for extended reading.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Tech Insight Journal. All rights reserved.</p>
+    </footer>
 </body>
 </html>
