@@ -1,0 +1,190 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #1a1a1a;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background: #007acc;
+    color: white;
+    clip: auto;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.header p { font-size: 1.1rem; opacity: 0.9; }
+
+.navigation-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navigation-menu a {
+    color: #1e3a8a;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    display: block;
+}
+
+.navigation-menu a:hover,
+.navigation-menu a:focus {
+    background: #1e3a8a;
+    color: white;
+    outline: 3px solid #007acc;
+}
+
+.content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.sidebar h3 {
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    font-size: 1.3rem;
+}
+
+.sidebar ul { list-style: none; }
+.sidebar a {
+    color: #1e3a8a;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+    color: #1e40af;
+    text-decoration: underline;
+    outline: 2px solid #007acc;
+}
+
+.main-content {
+    flex: 3;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.news-story {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+    scroll-margin-top: 100px; 
+}
+
+.news-story:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.news-story h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.news-story:focus {
+    outline: 3px solid #007acc;
+    outline-offset: 2px;
+}
+
+.byline {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.news-story a {
+    color: #1e3a8a;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.news-story a:hover,
+.news-story a:focus {
+    color: #1e40af;
+    outline: 3px solid #007acc;
+}
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .navigation-menu {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .header h1 { font-size: 2rem; }
+}
