@@ -1,0 +1,76 @@
+/* supple_style.scss */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #007aff, #5856d6);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+
+    header {
+        margin-bottom: 20px;
+        h1 { font-size: 36px; }
+        p { opacity: 0.8; }
+    }
+
+    .models {
+        display: flex;
+        gap: 15px;
+
+        .card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+
+            h3 { font-size: 22px; }
+            .price { font-size: 26px; font-weight: bold; margin: 10px 0; }
+
+            ul {
+                list-style: none;
+                text-align: left;
+                font-size: 14px;
+
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 20px;
+        button {
+            padding: 12px 35px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: none;
+            background: white;
+            color: #007aff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+    }
+}
