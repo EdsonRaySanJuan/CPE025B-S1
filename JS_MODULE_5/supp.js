@@ -1,6 +1,5 @@
 "use strict";
 
-// Initialize the contacts dataset
 let contacts = [
     {
         name: "Linus Torvalds",
@@ -22,7 +21,6 @@ let contacts = [
     }
 ];
 
-// Function to display a specific contact's details
 function showContact(index) {
     if (index >= 0 && index < contacts.length) {
         let contact = contacts[index];
@@ -34,7 +32,6 @@ function showContact(index) {
     }
 }
 
-// Function to display all contacts' names
 function showAllContacts() {
     console.log("\n--- All Contacts ---");
     contacts.forEach(contact => {
@@ -42,7 +39,6 @@ function showAllContacts() {
     });
 }
 
-// Function to add a new contact
 function addNewContact(name, role, skill) {
     if (!name || !role || !skill) {
         console.log("All fields are required!");
@@ -53,13 +49,12 @@ function addNewContact(name, role, skill) {
         name: name,
         role: role,
         skills: [skill],
-        availability: true // Default availability is true
+        availability: true 
     });
 
     console.log("New contact added successfully!");
 }
 
-// Function to search for a contact by name and display their role and availability
 function searchContact(name) {
     let found = false;
 
@@ -77,7 +72,6 @@ function searchContact(name) {
     }
 }
 
-// Persistent loop for user interaction
 while (true) {
     let action = prompt(
         "What would you like to do?\n" +
@@ -91,7 +85,7 @@ while (true) {
 
     if (action === "quit") {
         alert("Goodbye!");
-        break; // Exit the loop and end the program
+        break; 
     }
 
     switch (action) {
